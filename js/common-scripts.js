@@ -3,11 +3,11 @@ var Script = function () {
 
 //    tool tips
 
-    $('.tooltips').tooltip();
+    // $('.tooltips').tooltip();
 
 //    popovers
 
-    $('.popovers').popover();
+    // $('.popovers').popover();
 
 //    bxslider
 
@@ -53,6 +53,9 @@ $(function () {
              'data-trigger':'focus'
         }).popover({html : true });
     };
+    //列表页第一次初始化位置错误，后面初始化都没问题，原因位置！？
+    $('footer .icon-wechat').parent('a').popover('show');
+    $('footer .icon-wechat').parent('a').popover('hide');
     //底部微博链接添加
     $('footer .icon-weibo').parent('a').attr({
         "href": 'http://www.weibo.com/GUOLINOZONE',
