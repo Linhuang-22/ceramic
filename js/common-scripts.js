@@ -17,6 +17,8 @@ var Script = function () {
         maxSlides: 4,
         slideWidth: 276,
         slideMargin: 20,
+        auto: true,
+        controls:false
     });
 
 
